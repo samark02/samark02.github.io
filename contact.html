@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Contact Samar</title>
+    <link rel="stylesheet" href="21ad035.css">
+    <link rel="icon" type="image/x-icon" href="/images/sk.png">
+</head>
+
+<body id="contactbody">
+    <div id="bg-img"><br></div>
+    <div id="maindiv">
+        <div id="imgbox"></div>
+        <div id="formbox">
+            <form name="contact" onsubmit="formsubmit()">
+                <div id="formhead">
+                    <h3>Drop in a Message!</h3>
+                </div>
+                <div id="forminputs">
+                    <input type="text" name="Name" placeholder="Name" style="margin-top: 15px;" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Phone" placeholder="Phone">
+                    <input type="text" name="Message" placeholder="Message" style="height: 100px;" required>
+                    <input type="submit" style="background-color: lightgreen; width: 35%;">
+                    <a href="index.html"><input type="button" value="Home"
+                            style="background-color: lightblue; width: 35%; margin-left: 5px; "></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function formsubmit() {
+            var name =
+                document.forms.contact.Name.value;
+            if (name != "") {
+                window.alert(`Hey ${name} ! Your message is delivered.\nSamar will get back to you soon !`);
+            }
+        }
+    </script>
+</body>
+
+</html>
